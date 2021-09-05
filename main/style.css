@@ -1,0 +1,149 @@
+:root {
+  /* SZÍNEK */
+  --szín_1: #282740;
+  --szín_2: #343bbf;
+  --szín_3: #4973f2;
+  --szín_4: #f2ea77;
+  --szín_5: #f2f2f2;
+  /* MÉRETEK */
+  --ikon_méret_1: 3rem;
+  /* BETŰTÍPUS */
+  --betűtípus_1: "Poppins", sans-serif;
+  --betűtípus_2: "PT Serif", serif;
+}
+
+/* * {
+  font-family: var(--betűtípus_1);
+  font-weight: 300;
+} */
+
+/* CAROUSEL */
+.carousel-item {
+  height: 35rem;
+  background: black;
+  color: white;
+  position: relative;
+}
+
+/* CAROUSEL - SLIDER IMAGES */
+.slider_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../../BS_practice_5/pics/pic_1.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.slider_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../../BS_practice_5/pics/pic_2.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.slider_3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../../BS_practice_5/pics/pic_3.jpg);
+  background-position: cover;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.slider_4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../../BS_practice_5/pics/tánc_2.jpg);
+  background-position: cover;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#carouselContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+/* Közép-felső ikonok */
+#ikon_1,
+#ikon_2,
+#ikon_3,
+#ikon_4,
+#ikon_5,
+#ikon_6 {
+  font-size: var(--ikon_méret_1);
+}
+
+.felső_ikon_div {
+  cursor: pointer;
+  transition: 0.1s ease;
+  border: 0.5px solid transparent;
+  border-radius: 25px;
+}
+
+.felső_ikon_div:hover {
+  transform: scale(1.2);
+  border: 0.5px solid #fff;
+}
+
+/* Törzs */
+
+.info-kártya {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.info-kártya:hover {
+  transform: translateY(-5%);
+}
+
+/* Kártyák */
+.tábor-kártya {
+  height: 40rem;
+  width: 30rem;
+}
+
+.card-img-top {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  /* height: 25rem; */
+}
+
+/* Lábléc */
+.card {
+  height: auto;
+}
+
+.footer_img {
+  border-radius: 25px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.footer_img:hover {
+  transform: translateY(-10%);
+}
