@@ -297,34 +297,134 @@
     <div class="container-fluid p-3 bg-primary text-light">
       <div class="container">
         <div class="row pt-5">
+          <!-- Kréta e-napló -->
           <div class="col text-center felső_ikon_div">
-            <i class="material-icons" id="ikon_1">auto_stories</i>
-            <p>KRÉTA E-napló</p>
+            <a
+              class="text-decoration-none text-light"
+              target="blank"
+              href="https://idp.e-kreta.hu/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dkreta-web%26response_type%3Dcode%26scope%3Dopenid%2520offline_access%2520kreta-core-webapi.public%26state%3DOpenIdConnect.AuthenticationProperties%253Dra3V35XLRX2RUbvDo_n0hHMnIP_3OerDVIgHL1NUjS8zYwiOAEgPkleI50ho4J-B6CPzP-yUVgl3a3-aPnjFLVQ8jQSP7KCkhrt8QM1cef1Eqja4ZQj39FYKM85esxqDJMNShEQIbJ-goT3uKXHanA%26response_mode%3Dform_post%26nonce%3D637665442707556295.ODcwOThmZWItYWNlMy00ZDU0LWE0YzktMTFlZTMxZDkzOTZmY2U5M2M0YWQtM2I4ZC00ODIwLWI3MzctYWYzZGM0Y2NkYTE1%26institute_code%3Dklik035061001%26institute_data%3DeyJuZXh0X3VwZGF0ZV9kYXRlX3RpbWUiOiIyMDIxLjEwLjA1LiAyMjowMCIsImlzX3N6aXJfaW5zdGl0dXRlIjpmYWxzZSwiaXNfbGljZW5jZV92YWxpZCI6dHJ1ZSwiaXNfYXJjaGl2ZSI6ZmFsc2UsImlzX2Nzb2trZW50ZXR0X2dvbmR2aXNlbG8iOmZhbHNlLCJpc19pbnRlem1lbnlfcm92aWRuZXYiOnRydWUsImlzX3N1Y2Nlc3NfYXV0aG9yaXplZF9kYXRlIjpmYWxzZX0%253D%26redirect_uri%3Dhttps%253A%252F%252Fklik035061001.e-kreta.hu%26x-client-SKU%3DID_NET461%26x-client-ver%3D5.3.0.0"
+            >
+              <i class="material-icons" id="ikon_1">auto_stories</i>
+              <p>KRÉTA E-napló</p>
+            </a>
           </div>
+          <!-- Kréta e-ügyintézés -->
           <div class="col text-center felső_ikon_div">
-            <i class="material-icons" id="ikon_2">task</i>
-            <p>KRÉTA E-ügyintézés</p>
+            <a
+              class="text-decoration-none text-light"
+              href="https://eugyintezes.e-kreta.hu/kezdolap"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_2">task</i>
+              <p>KRÉTA E-ügyintézés</p>
+            </a>
           </div>
+          <!-- Online ebédbefizetés -->
           <div class="col text-center felső_ikon_div">
-            <i class="material-icons" id="ikon_3">restaurant</i>
-            <p>Online ebédbefizetés</p>
+            <a
+              class="text-decoration-none text-light"
+              href="https://www.multischool.hu/Account/Login?ReturnUrl=%2f"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_3">restaurant</i>
+              <p>Online ebédbefizetés</p>
+            </a>
           </div>
+          <!-- Ökoiskola -->
           <div class="col text-center felső_ikon_div">
-            <i class="material-icons" id="ikon_4">park</i>
-            <p>Ökoiskola</p>
+            <a
+              class="text-decoration-none text-light"
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1n968_OukF3FLAyZ3SNDMnQ5m6INjtEvV&ll=47.511804296885096%2C19.110096170175197&z=16"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_4">park</i>
+              <p>Ökoiskola</p>
+            </a>
           </div>
+          <!-- Tehetségpont -->
           <div class="col text-center felső_ikon_div">
-            <i class="material-icons" id="ikon_5">school</i>
-            <p>Tehetségpont</p>
+            <a
+              class="text-decoration-none text-light"
+              href="https://tehetseg.hu/tehetsegpontokrol"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_5">school</i>
+              <p>Tehetségpont</p>
+            </a>
           </div>
+          <!-- Digitális adatkezelés -->
           <div class="col text-center felső_ikon_div">
-            <i class="material-icons" id="ikon_6">assessment</i>
-            <p>Digitális adatkezelés</p>
+            <a
+              class="text-decoration-none text-light"
+              data-bs-toggle="modal"
+              data-bs-target="#digitAdatFelugro"
+              href="#"
+            >
+              <i class="material-icons" id="ikon_6">assessment</i>
+              <p>Digitális adatkezelés</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <!-- Felső ikon sáv: end -->
+
+    <!-- Adatkezelés felugró: start -->
+    <div
+      class="modal fade"
+      id="digitAdatFelugro"
+      tabindex="-1"
+      aria-labelledby="digitAdatFelugro"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="digitAdatFelugro">
+              Digitális adatkezeléssel kapcsolatos dokumentumok
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a
+                class="fw-light"
+                target="blank"
+                href="../dokumentumok/adatkez/ADATKEZELÉSI TÁJÉKOZTATÓ_átirat.pdf"
+              >
+                Tájékoztató a tantermen kívüli, digitális munkarendben való
+                részvétel során megvalósult adatkezelésről.
+              </a>
+            </p>
+            <p>
+              <a
+                class="fw-light"
+                target="blank"
+                href="../dokumentumok/adatkez/ÚTMUTATÓ_digitális_oktatás_tanulók_szülők_átirat.pdf"
+              >
+                Útmutató a tantermen kívüli, digitális munarendben való
+                részvétel során megvalósult adatkezeléshez.
+              </a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Bezárás
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Adatkezelés felugró: end -->
 
     <!-- Középső hullám: start -->
     <svg
