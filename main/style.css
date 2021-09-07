@@ -116,7 +116,7 @@
 }
 
 .info-kártya:hover {
-  transform: translateY(-5%);
+  transform: scale(1.1);
 }
 
 /* Kártyák */
