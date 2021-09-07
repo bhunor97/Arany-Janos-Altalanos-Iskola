@@ -33,7 +33,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../pics/pic_1.jpg);
+  background-image: url(../img/pic_1.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -46,7 +46,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../pics/pic_2.jpg);
+  background-image: url(../img/pic_2.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -59,7 +59,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../pics/pic_3.jpg);
+  background-image: url(../img/pic_3.jpg);
   background-position: cover;
   background-size: cover;
   opacity: 0.5;
@@ -72,7 +72,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../pics/tánc_2.jpg);
+  background-image: url(../img/tánc_2.jpg);
   background-position: cover;
   background-size: cover;
   opacity: 0.5;
