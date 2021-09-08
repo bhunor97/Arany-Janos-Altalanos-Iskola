@@ -47,13 +47,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Nav-sáv "Főoldal" -->
+        <!-- Főoldal nav-sáv menöpont -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link active" href="#">Főoldal</a>
             </li>
-            <!-- Nav-sáv "Iskolánkról" -->
+            <!-- Iskolánkról nav-sáv menüpont -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -64,7 +64,7 @@
                 aria-expanded="false"
                 >Iskolánkról</a
               >
-              <!-- "Iskolánkról" legördülő"-->
+              <!-- Iskolánk története legördülő-->
               <ul class="dropdown-menu" aria-labelledby="iskTört">
                 <li>
                   <a
@@ -74,7 +74,7 @@
                     >Iskolánk története</a
                   >
                 </li>
-                <!-- "Munkatársak" 2. szint legördülő-->
+                <!-- Munkatársak legördülő-->
                 <div class="dropdown dropend">
                   <a
                     class="dropdown-item dropdown-toggle"
@@ -85,6 +85,7 @@
                     aria-expanded="false"
                     >Munkatársak</a
                   >
+                  <!-- Munkatársak legördülő 2. szint -->
                   <div class="dropdown-menu" aria-labelledby="munkatarsak">
                     <a class="dropdown-item" href="#">Vezetőség</a>
                     <a class="dropdown-item" href="#">Pedagógusok</a>
@@ -107,7 +108,7 @@
                 aria-expanded="false"
                 >Általános Iskola</a
               >
-              <!-- Beiskolázás legördülő 2. szint -->
+              <!-- Beiskolázás legördülő -->
               <ul class="dropdown-menu" aria-labelledby="áltIsk">
                 <div class="dropdown dropend">
                   <a
@@ -119,53 +120,133 @@
                     aria-expanded="false"
                     >Beiskolázás</a
                   >
+                  <!-- Beiskolázás legördülő 2. szint -->
                   <div class="dropdown-menu" aria-labelledby="munkatarsak">
                     <a class="dropdown-item" href="#">Körzetlista</a>
                     <a class="dropdown-item" href="#"
                       >Első osztályos beiratkozás</a
                     >
                     <a class="dropdown-item" href="#"
-                      >NFelvételi magasabb évfolyamba</a
+                      >Felvételi magasabb évfolyamba</a
                     >
                   </div>
                 </div>
+                <!-- Dokumentumok legördülő -->
                 <li>
-                  <a href="#" class="dropdown-item">Dokumentumok</a>
+                  <div class="dropdown dropend">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="dokumentumok"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Dokumentumok</a
+                    >
+                    <!-- Dokumentumok legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="dokumentumok">
+                      <a class="dropdown-item" href="#">Szakmai alapdokumentum</a>
+                      <a class="dropdown-item" href="#">SZMSZ</a>
+                      <a class="dropdown-item" href="#">Pedagógiai program</a>
+                      <a class="dropdown-item" href="#">Házirend</a>
+                      <a class="dropdown-item" href="#">Gyakornoki szabályzat</a>
+                      <a class="dropdown-item" href="#">Helyi értékelési szabályzat</a>
+                      <a class="dropdown-item" href="#">Panaszkezelési szabályzat</a>
+                      <a class="dropdown-item" href="#">Testnevelési felmentés eljárásrend</a>
+                      <a class="dropdown-item" href="#">Adatvédelmi szabályzat</a>
+
+                    </div>
                 </li>
+                <!-- Órarend legördülő -->
                 <li>
-                  <a href="#" class="dropdown-item">Órarend</a>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="orarend"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Órarend</a
+                    >
+                    <!-- Órarend legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="orarend">
+                      <a class="dropdown-item" href="#">Csengetési rend</a>
+                      <a class="dropdown-item" href="#">Órarendek</a>
+                      <a class="dropdown-item" href="#">Órák, foglalkozások rendje</a>
+                    </div>
+                  </div>
                 </li>
+                <!-- Tantárgyak legördülő -->
                 <li>
-                  <a href="#" class="dropdown-item">Tantárgyak</a>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="tantargyak"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Tantárgyak</a
+                    >
+                    <!-- Tantárgyak legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="tantargyak">
+                      <a class="dropdown-item" href="#">Történelem</a>
+                      <a class="dropdown-item" href="#">Matematika</a>
+                      <a class="dropdown-item" href="#">Informatika</a>
+                    </div>
+                  </div>
                 </li>
+                <!-- 2020/2021 Éves ütemterv legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">2020/2021 Éves ütemterv</a>
                 </li>
+                <!-- Gyermekvédelem legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Gyermekvédelem</a>
                 </li>
+                <!-- Tehetséggondozás legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Tehetséggondozás</a>
                 </li>
+                <!-- Büszkeségeink legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Büszkeségeink</a>
                 </li>
+                <!-- Galéria legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Galéria</a>
                 </li>
+                <!-- Videók legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Videók</a>
                 </li>
+                <!-- Különös közzététel legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Különös közzététel</a>
                 </li>
+                <!-- Választható hitoktatás legördülő -->
                 <li>
                   <a href="#" class="dropdown-item">Választható hitoktatás</a>
                 </li>
+                <!-- Orszrágos kompetenciamérés legördülő -->
                 <li>
-                  <a href="#" class="dropdown-item"
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="orszagosKomp"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                     >Orszrágos kompetenciamérés</a
-                  >
+                    >
+                    <!-- Órarend legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="orszagosKomp">
+                      <a class="dropdown-item" href="#">Idegen nyelvi Kompetenciamérés</a>
+                      <a class="dropdown-item" href="#">Kompetenciamérés</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </li>
