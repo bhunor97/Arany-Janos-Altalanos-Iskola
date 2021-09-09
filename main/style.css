@@ -17,7 +17,8 @@
   font-weight: 300;
 } */
 
-/* CAROUSEL */
+/* FŐOLDAL */
+/* Körhinta */
 .carousel-item {
   height: 35rem;
   background: black;
@@ -25,7 +26,7 @@
   position: relative;
 }
 
-/* CAROUSEL - SLIDER IMAGES */
+/* Körhinta - képek */
 .slider_1::before {
   content: "";
   position: absolute;
@@ -86,7 +87,7 @@
   padding-bottom: 50px;
 }
 
-/* Közép-felső ikonok */
+/* Felső ikonok */
 #ikon_1,
 #ikon_2,
 #ikon_3,
@@ -109,7 +110,6 @@
 }
 
 /* Törzs */
-
 .info-kártya {
   cursor: pointer;
   transition: 0.2s ease;
@@ -146,3 +146,7 @@
 .footer_img:hover {
   transform: translateY(-10%);
 }
+
+/* .vezetőség_törzs_container {
+  height: auto;
+} */

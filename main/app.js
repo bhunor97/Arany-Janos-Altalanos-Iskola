@@ -50,3 +50,33 @@
       });
     });
 })(bootstrap);
+
+// Vezetőség emailek
+const intezmenyVez = document.getElementById("intezmenyVez");
+const altalanosIgazg = document.getElementById("altalanosIgazg");
+const alsosIgazg = document.getElementById("alsosIgazg");
+const muvIgazg = document.getElementById("muvIgazg");
+
+// Intézményvezető
+intezmenyVez.onclick = () => {
+  window.location = "mailto:igazgato@aranyjanos-zuglo.edu.hu";
+  intezmenyVezEmail();
+};
+
+// Általános igazgatóhelyettes
+altalanosIgazg.onclick = () => {
+  window.location = "mailto:igazgatohelyettes@aranyjanos-zuglo.edu.hu";
+  intezmenyVezEmail();
+};
+
+// Alsós igazgatóhelyettes
+alsosIgazg.onclick = () => {
+  window.location = "mailto:igazgatohelyettes.dosane@aranyjanos-zuglo.edu.hu";
+  intezmenyVezEmail();
+};
+
+// Művészeti igazgatóhelyettes
+muvIgazg.onclick = () => {
+  window.location = "mailto:muveszeti@aranyjanos-zuglo.edu.hu";
+  intezmenyVezEmail();
+};
