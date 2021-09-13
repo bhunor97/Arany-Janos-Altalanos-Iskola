@@ -147,6 +147,12 @@
   transform: translateY(-10%);
 }
 
-/* .vezetőség_törzs_container {
-  height: auto;
-} */
+/* Informatika - képek */
+.info_kép {
+  width: 250px;
+  transition: 0.2s ease;
+}
+
+.info_kép:hover {
+  transform: scale(1.1);
+}

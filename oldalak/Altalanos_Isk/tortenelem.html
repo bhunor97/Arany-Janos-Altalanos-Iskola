@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Szükséges meta tagok -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../../main/style.css" />
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Material Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Arany János Általános Iskola: Nevelést és oktatást segítők</title>
+  </head>
+  <body>
+    <!-- Navigációs sáv: start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand mb-0 h1">
+          Arany János Általános Iskola
+        </a>
+        <!-- Nav-sáv gomb -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Főoldal nav-sáv menöpont -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link active" href="../../index.html">Főoldal</a>
+            </li>
+            <!-- Iskolánkról nav-sáv menüpont -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="iskTört"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Iskolánkról</a
+              >
+              <!-- Iskolánk története legördülő-->
+              <ul class="dropdown-menu" aria-labelledby="iskTört">
+                <li>
+                  <a
+                    href="#"
+                    target="blank"
+                    class="dropdown-item"
+                    >Iskolánk története</a
+                  >
+                </li>
+                <!-- Munkatársak legördülő-->
+                <div class="dropdown dropend">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="munkatarsak"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Munkatársak</a
+                  >
+                  <!-- Munkatársak legördülő 2. szint -->
+                  <div class="dropdown-menu" aria-labelledby="munkatarsak">
+                    <a class="dropdown-item" href="../Iskolankrol/vezetoseg.html">Vezetőség</a>
+                    <a class="dropdown-item" href="../Iskolankrol/pedagogusok.html">Pedagógusok</a>
+                    <a class="dropdown-item" href="../Iskolankrol/neveles_es_okt.html"
+                      >Nevelést és oktatást segítők</a
+                    >
+                    <a class="dropdown-item" href="../Iskolankrol/iskolapszicho.html">Iskolapszichológus</a>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <!-- Általános Iskola legördülő -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="áltIsk"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Általános Iskola</a
+              >
+              <!-- Beiskolázás legördülő -->
+              <ul class="dropdown-menu" aria-labelledby="áltIsk">
+                <div class="dropdown dropend">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="munkatarsak"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Beiskolázás</a
+                  >
+                  <!-- Beiskolázás legördülő 2. szint -->
+                  <div class="dropdown-menu" aria-labelledby="munkatarsak">
+                    <a class="dropdown-item" href="korzetlista.html">Körzetlista</a>
+                    <a class="dropdown-item" href="elso_oszt_beir.html"
+                      >Első osztályos beiratkozás</a
+                    >
+                    <a class="dropdown-item" href="felv_magasabb.html"
+                      >Felvételi magasabb évfolyamba</a
+                    >
+                  </div>
+                </div>
+                <!-- dokumentumok legördülő -->
+                <li>
+                    <div class="dropdown dropend">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                        id="dokumentumok"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Dokumentumok</a
+                      >
+                      <!-- dokumentumok legördülő 2. szint -->
+                      <div class="dropdown-menu" aria-labelledby="dokumentumok">
+                        <a class="dropdown-item" href="szakmai_alapdok.html">Szakmai alapdokumentum</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/SZMSZ.pdf">SZMSZ</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/PP.pdf">Pedagógiai program</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/HR.pdf">Házirend</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/Gyakornoki_szabályzat.pdf">Gyakornoki szabályzat</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/A_helyi_értékelési_szabályzat.pdf">Helyi értékelési szabályzat</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/Panaszkezelési_rend.pdf">Panaszkezelési szabályzat</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/Testnevelés_felmentés_eljárásrend.pdf">Testnevelési felmentés eljárásrend</a>
+                        <a class="dropdown-item" target="_blank" href="../../dokumentumok/Dokumentumok_menupont/adatved_szabalyzat2018.pdf">Adatvédelmi szabályzat</a>
+                      </div>
+                  </li>
+                <!-- Órarend legördülő -->
+                <li>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="orarend"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Órarend</a
+                    >
+                    <!-- Órarend legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="orarend">
+                      <a class="dropdown-item" href="csengetesi_rend.html">Csengetési rend</a>
+                      <a class="dropdown-item" href="#">Órarendek</a>
+                      <a class="dropdown-item" target="_blank" href="../../dokumentumok/órarend/délutáni háló 2014-2015.(1).pdf">Órák, foglalkozások rendje</a>
+                    </div>
+                  </div>
+                </li>
+                <!-- Tantárgyak legördülő -->
+                <li>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="tantargyak"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Tantárgyak</a
+                    >
+                    <!-- Tantárgyak legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="tantargyak">
+                      <a class="dropdown-item" href="../Altalanos_Isk/tortenelem.html">Történelem</a>
+                      <a class="dropdown-item" href="../Altalanos_Isk/matematika.html">Matematika</a>
+                      <a class="dropdown-item" href="../Altalanos_Isk/informatika.html">Informatika</a>
+                    </div>
+                  </div>
+                </li>
+                <!-- 2020/2021 Éves ütemterv legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">2020/2021 Éves ütemterv</a>
+                </li>
+                <!-- Gyermekvédelem legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Gyermekvédelem</a>
+                </li>
+                <!-- Tehetséggondozás legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Tehetséggondozás</a>
+                </li>
+                <!-- Büszkeségeink legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Büszkeségeink</a>
+                </li>
+                <!-- Galéria legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Galéria</a>
+                </li>
+                <!-- Videók legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Videók</a>
+                </li>
+                <!-- Különös közzététel legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Különös közzététel</a>
+                </li>
+                <!-- Választható hitoktatás legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Választható hitoktatás</a>
+                </li>
+                <!-- Orszrágos kompetenciamérés legördülő -->
+                <li>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="orszagosKomp"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Orszrágos kompetenciamérés</a
+                    >
+                    <!-- Órarend legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="orszagosKomp">
+                      <a class="dropdown-item" href="#">Idegen nyelvi Kompetenciamérés</a>
+                      <a class="dropdown-item" href="#">Kompetenciamérés</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Művészeti iskola nav-sáv menüpont -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="művIsk"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Művészeti Iskola</a
+              >
+              <!-- A művészetoktatásról legördülő -->
+              <ul class="dropdown-menu" aria-labelledby="művIsk">
+                <li>
+                  <a href="#" class="dropdown-item">A művészetoktatásról</a>
+                </li>
+                <!-- Tanszakok legördülő -->
+                <li>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="tanszakok"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Tanszakok</a
+                    >
+                    <!-- Tanszakok legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="tanszakok">
+                      <a class="dropdown-item" href="#">Színjáték</a>
+                      <a class="dropdown-item" href="#">Moderntánc</a>
+                      <a class="dropdown-item" href="#">Néptánc</a>
+                    </div>
+                  </div>
+                  <!-- Térítési és tandíj legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Térítési és tandíj</a>
+                </li>
+                <!-- Jelentkezés művészeti iskolába legürdülő -->
+                <li>
+                  <a href="#" class="dropdown-item"
+                    >Jelentkezés művészeti iskolába</a
+                  >
+                </li>
+                <!-- Galéria legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Galéria</a>
+                </li>
+                <!-- Videók legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Videók</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Szervezetek nav-sáv menüpont -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="szerv"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Szervezetek</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="szerv">
+                <!-- Alaptítvány legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Alaptítvány</a>
+                </li>
+                <!-- DÖK legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">DÖK</a>
+                </li>
+                <!-- Szülői szervezetek legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Szülői szervezetek</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Étkezés nav-sáv menüpont -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="étk"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Étkezés</a
+              >
+              
+              <ul class="dropdown-menu" aria-labelledby="étk">
+                <!-- Ebédbefizetés legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Ebédbefizetés</a>
+                </li>
+                <!-- Online befizetés legördülő -->
+                <li>
+                  <a href="#" class="dropdown-item">Online befizetés</a>
+                </li>
+                <!-- Étlap legördülő -->
+                <li>
+                  <div class="dropdown dropend">
+                    <a
+                    class="dropdown-item dropdown-toggle"
+                    href="#"
+                    id="etlap"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Étlap</a
+                    >
+                    <!-- Étlap legördülő 2. szint -->
+                    <div class="dropdown-menu" aria-labelledby="etlap">
+                      <a class="dropdown-item" href="#">Zuglói étlap</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Elérhetőség nav-sáv menüpont -->
+            <li class="nav-item">
+              <a class="nav-link" id="elérh" href="#">Elérhetőség</a>
+            </li>
+            <!-- Ökoiskola nav-sáv menüpont -->
+            <li class="nav-item">
+              <a class="nav-link" id="öko" href="#">Ökoiskola</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigációs sáv: end -->
+
+    <!-- Körhinta: start -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- csúszkák -->
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- elem_1 -->
+        <div class="carousel-item slider_1 active">
+          <div class="container" id="carouselContainer">
+            <h1>Táncelőadás</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              ut neque repellat non a consectetur obcaecati eum corporis sunt.
+              Repellat.
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=E7mafIWXEvY"
+              class="btn btn-lg btn-primary"
+              target="blank"
+              >Megnézem</a
+            >
+          </div>
+        </div>
+        <!-- elem_2 -->
+        <div class="carousel-item slider_2">
+          <div class="container" id="carouselContainer">
+            <h1>Dráma</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              ut neque repellat non a consectetur obcaecati eum corporis sunt.
+              Repellat.
+            </p>
+            <a
+              href="https://drive.google.com/drive/folders/12016EhEz2axJrGRJ6Qqbv6b22azdyVR2"
+              target="blank"
+              class="btn btn-lg btn-primary"
+              >Megnézem</a
+            >
+          </div>
+        </div>
+        <!-- elem_3 -->
+        <div class="carousel-item slider_3">
+          <div class="container" id="carouselContainer">
+            <h1>Néptánc</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, commodi!
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1EJuVS4-dCNLx5OJsvcNIx72gQJtIWhg7/view"
+              target="blank"
+              class="btn btn-lg btn-primary"
+              >Megnézem</a
+            >
+          </div>
+        </div>
+        <!-- elem_4 -->
+        <div class="carousel-item slider_4">
+          <div class="container" id="carouselContainer">
+            <h1>Modern Tánc</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, commodi!
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1jJY9m8FxLNRmpOCVXehZI_PQismd4Khn/view"
+              target="blank"
+              class="btn btn-lg btn-primary"
+              >Megnézem</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Körhinta: end -->
+
+    <!-- Felső ikon sáv: start -->
+    <div class="container-fluid p-3 bg-primary text-light">
+      <div class="container">
+        <div class="row pt-5">
+          <!-- Kréta e-napló -->
+          <div class="col text-center felső_ikon_div">
+            <a
+              class="text-decoration-none text-light"
+              target="blank"
+              href="https://idp.e-kreta.hu/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dkreta-web%26response_type%3Dcode%26scope%3Dopenid%2520offline_access%2520kreta-core-webapi.public%26state%3DOpenIdConnect.AuthenticationProperties%253Dra3V35XLRX2RUbvDo_n0hHMnIP_3OerDVIgHL1NUjS8zYwiOAEgPkleI50ho4J-B6CPzP-yUVgl3a3-aPnjFLVQ8jQSP7KCkhrt8QM1cef1Eqja4ZQj39FYKM85esxqDJMNShEQIbJ-goT3uKXHanA%26response_mode%3Dform_post%26nonce%3D637665442707556295.ODcwOThmZWItYWNlMy00ZDU0LWE0YzktMTFlZTMxZDkzOTZmY2U5M2M0YWQtM2I4ZC00ODIwLWI3MzctYWYzZGM0Y2NkYTE1%26institute_code%3Dklik035061001%26institute_data%3DeyJuZXh0X3VwZGF0ZV9kYXRlX3RpbWUiOiIyMDIxLjEwLjA1LiAyMjowMCIsImlzX3N6aXJfaW5zdGl0dXRlIjpmYWxzZSwiaXNfbGljZW5jZV92YWxpZCI6dHJ1ZSwiaXNfYXJjaGl2ZSI6ZmFsc2UsImlzX2Nzb2trZW50ZXR0X2dvbmR2aXNlbG8iOmZhbHNlLCJpc19pbnRlem1lbnlfcm92aWRuZXYiOnRydWUsImlzX3N1Y2Nlc3NfYXV0aG9yaXplZF9kYXRlIjpmYWxzZX0%253D%26redirect_uri%3Dhttps%253A%252F%252Fklik035061001.e-kreta.hu%26x-client-SKU%3DID_NET461%26x-client-ver%3D5.3.0.0"
+            >
+              <i class="material-icons" id="ikon_1">auto_stories</i>
+              <p>KRÉTA E-napló</p>
+            </a>
+          </div>
+          <!-- Kréta e-ügyintézés -->
+          <div class="col text-center felső_ikon_div">
+            <a
+              class="text-decoration-none text-light"
+              href="https://eugyintezes.e-kreta.hu/kezdolap"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_2">task</i>
+              <p>KRÉTA E-ügyintézés</p>
+            </a>
+          </div>
+          <!-- Online ebédbefizetés -->
+          <div class="col text-center felső_ikon_div">
+            <a
+              class="text-decoration-none text-light"
+              href="https://www.multischool.hu/Account/Login?ReturnUrl=%2f"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_3">restaurant</i>
+              <p>Online ebédbefizetés</p>
+            </a>
+          </div>
+          <!-- Ökoiskola -->
+          <div class="col text-center felső_ikon_div">
+            <a
+              class="text-decoration-none text-light"
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1n968_OukF3FLAyZ3SNDMnQ5m6INjtEvV&ll=47.511804296885096%2C19.110096170175197&z=16"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_4">park</i>
+              <p>Ökoiskola</p>
+            </a>
+          </div>
+          <!-- Tehetségpont -->
+          <div class="col text-center felső_ikon_div">
+            <a
+              class="text-decoration-none text-light"
+              href="https://tehetseg.hu/tehetsegpontokrol"
+              target="_blank"
+            >
+              <i class="material-icons" id="ikon_5">school</i>
+              <p>Tehetségpont</p>
+            </a>
+          </div>
+          <!-- Digitális adatkezelés -->
+          <div class="col text-center felső_ikon_div">
+            <a
+              class="text-decoration-none text-light"
+              data-bs-toggle="modal"
+              data-bs-target="#digitAdatFelugro"
+              href="#"
+            >
+              <i class="material-icons" id="ikon_6">assessment</i>
+              <p>Digitális adatkezelés</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Felső ikon sáv: end -->
+
+    <!-- Adatkezelés felugró: start -->
+    <div
+      class="modal fade"
+      id="digitAdatFelugro"
+      tabindex="-1"
+      aria-labelledby="digitAdatFelugro"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="digitAdatFelugro">
+              Digitális adatkezeléssel kapcsolatos ../../dokumentumok
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a
+                class="fw-light"
+                target="blank"
+                href="../../dokumentumok/adatkez/ADATKEZELÉSI TÁJÉKOZTATÓ_átirat.pdf"
+              >
+                Tájékoztató a tantermen kívüli, digitális munkarendben való
+                részvétel során megvalósult adatkezelésről.
+              </a>
+            </p>
+            <p>
+              <a
+                class="fw-light"
+                target="blank"
+                href="../../dokumentumok/adatkez/ÚTMUTATÓ_digitális_oktatás_tanulók_szülők_átirat.pdf"
+              >
+                Útmutató a tantermen kívüli, digitális munarendben való
+                részvétel során megvalósult adatkezeléshez.
+              </a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Bezárás
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Adatkezelés felugró: end -->
+
+    <!-- Középső hullám: start -->
+    <svg
+      class="hullám"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 120 1440 180"
+    >
+      <path
+        fill="#0d6efd"
+        fill-opacity="1"
+        d="M0,288L80,261.3C160,235,320,181,480,176C640,171,800,213,960,213.3C1120,213,1280,171,1360,149.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Középső hullám: end -->
+
+    <!-- Üdvözlés rész: start -->
+    <div class="container-fluid">
+      <div class="container text-center">
+        <h1 class="fw-bold text-dark">
+            Történelem
+        </h1>
+      </div>
+    </div>
+    <!-- Üdvözlés rész: end -->
+
+    <!-- Alsó hullám: start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+      <path
+        fill="#0d6efd"
+        fill-opacity="1"
+        d="M0,192L60,165.3C120,139,240,85,360,69.3C480,53,600,75,720,112C840,149,960,203,1080,218.7C1200,235,1320,213,1380,202.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- Alsó hullám: end -->
+
+    <!-- Szöveg törzs: start -->
+    <div class="container-fluid bg-primary mx-auto törzs_container">
+      <div class="container shadow text-center py-5 px-auto">
+        <!-- Történelem: start -->
+        <article class="bg-light text-center border border-3 py-5">
+            <h2>6. osztályos előmeneteli beszámoló:</h2>
+            <p><a target="_blank" href="../../dokumentumok/történelem/torivizsgatetel.pdf">tételsor</a></p>
+            <p><a target="_blank" href="../../dokumentumok/történelem/torivizsgasegedlet.pdf">segédanyag, a tételek kidolgozásához</a></p>
+        </article>
+        <!-- Történelem: end -->
+      </div>
+    </div>
+    <!-- Szöveg törzs: end -->
+
+    <!-- Alsó hullám: start -->
+    <svg
+      class="alsó_hullám"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 180"
+    >
+      <path
+        fill="#0d6efd"
+        fill-opacity="1"
+        d="M0,128L60,144C120,160,240,192,360,170.7C480,149,600,75,720,42.7C840,11,960,21,1080,42.7C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Alsó hullám: end -->
+
+    <!-- Táborozás: start -->
+    <div class="container text-center mt-5">
+      <h2 class="fw-bold">Táborozási lehetőségek</h2>
+    </div>
+
+    <section
+      class="
+        container-fluid
+        text-center
+        d-flex
+        justify-content-around
+        flex-wrap
+        pt-5
+      "
+    >
+      <!-- Soltvadkert -->
+      <div class="card tábor-kártya shadow mt-5 mb-5">
+        <img src="../../img/soltvad_1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Soltvadkerti gyermektábor</h5>
+          <p class="card-text fw-normal">
+            <a
+              target="blank"
+              href="../../dokumentumok/soltvadkert/szülői_tájékoztató.pdf"
+              >Szülői tájékoztató</a
+            >
+          </p>
+          <p class="card-text fw-normal">
+            <a
+              target="blank"
+              href="../../dokumentumok/soltvadkert/Szülői_Nyilatkozat_2021_Sotya_PDF.pdf"
+              >Szülői nyilatkozat</a
+            >
+          </p>
+          <a
+            target="blank"
+            href="http://zugsport.hu/category/soltvadkerti-tabor/"
+            class="btn btn-primary"
+            >Soldvadkerti tábor adatai</a
+          >
+        </div>
+      </div>
+      <!-- Napközis tábor -->
+      <div class="card tábor-kártya shadow mt-5 mb-5">
+        <img src="../../img/napközis_1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Napközis tábor</h5>
+
+          <p class="card-text fw-normal">
+            <a
+              target="blank"
+              href="../../dokumentumok/napközis/1.melléklet_Adatkezelési_és_hozzájáruló_nyilatkozat_2021..pdf"
+              >1.melléklet Adatkezelési és hozzájáruló nyilatkozat 2021.</a
+            >
+          </p>
+          <p class="card-text fw-normal">
+            <a
+              target="blank"
+              href="../../dokumentumok/napközis/2.melléklet_Zuglói_Napközis_tábor_2021._szülői_nyilatkozat.pdf"
+              >2.melléklet Zuglói Napközis tábor 2021. szülői nyilatkozat.</a
+            >
+          </p>
+          <p class="card-text fw-normal">
+            <a
+              target="blank"
+              href="../../dokumentumok/napközis/Aktuális_egészségügyi_állapot_nyilatkozat.pdf"
+              >Aktuális egészségügyi állapot nyilatkozat</a
+            >
+          </p>
+          <a
+            target="blank"
+            href="../../dokumentumok/napközis/Tábori_általános_tájékoztató_2021..pdf"
+            class="btn btn-primary"
+            >Tábori általános tájékoztató 2021</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Táborozás: end -->
+
+    <!-- Lábléc: start -->
+    <footer
+      class="
+        bg-dark
+        text-center
+        d-flex
+        justify-content-center
+        align-items-center
+        flex-wrap
+        p-5
+        mt-5
+      "
+    >
+      <div class="row">
+        <div class="col shadow mt-5">
+          <a target="blank" href="https://www.hungast.hu/">
+            <img
+              class="footer_img"
+              src="../../img/hungast.png"
+              alt="Hungast logo"
+            />
+          </a>
+        </div>
+        <div class="col shadow mt-5">
+          <a target="blank" href="https://ofi.oh.gov.hu/">
+            <img class="footer_img" src="../../img/OF_logo_2.jpg" alt="OF logo" />
+          </a>
+        </div>
+        <div class="col shadow mt-5">
+          <a target="blank" href="https://tehetseg.hu/">
+            <img
+              class="footer_img"
+              src="../../img/tehetseg_1.png"
+              alt="Tehetség.hu logo"
+            />
+          </a>
+        </div>
+        <div class="col shadow mt-5">
+          <a
+            target="blank"
+            href="https://idp.e-kreta.hu/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dkreta-web%26response_type%3Dcode%26scope%3Dopenid%2520offline_access%2520kreta-core-webapi.public%26state%3DOpenIdConnect.AuthenticationProperties%253DSjRWeRUNHLISkmJStcHcBEDcEEhlwBPVZ_mSy_rH1cC4RytpR-z6eSsPMuK11O3XZzSdNsltjb4SkgtpyVRdPSH1q_3g6zJwK3nuHOpERG_QWiHgZDE6MS6Zt2lPruLkV5FUE9xQk_O37ZRNDrDUMQ%26response_mode%3Dform_post%26nonce%3D637666116544985485.MmU1MDZmNzQtNjQ4Ny00ZjM0LTg2ZTEtMjVmNjQwZDYwNjEzMjg3NjFmYTctZGQ2Ni00ZTVhLTgxM2MtMTQ4OTVlNWRkMTA1%26institute_code%3Dklik035061001%26institute_data%3DeyJuZXh0X3VwZGF0ZV9kYXRlX3RpbWUiOiIyMDIxLjEwLjA1LiAyMjowMCIsImlzX3N6aXJfaW5zdGl0dXRlIjpmYWxzZSwiaXNfbGljZW5jZV92YWxpZCI6dHJ1ZSwiaXNfYXJjaGl2ZSI6ZmFsc2UsImlzX2Nzb2trZW50ZXR0X2dvbmR2aXNlbG8iOmZhbHNlLCJpc19pbnRlem1lbnlfcm92aWRuZXYiOnRydWUsImlzX3N1Y2Nlc3NfYXV0aG9yaXplZF9kYXRlIjpmYWxzZX0%253D%26redirect_uri%3Dhttps%253A%252F%252Fklik035061001.e-kreta.hu%26x-client-SKU%3DID_NET461%26x-client-ver%3D5.3.0.0"
+          >
+            <img class="footer_img" src="../../img/kreta_2.jpg" alt="Kréta logo" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Lábléc: end -->
+
+    <!-- Bootstrap Javascript link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../main/app.js"></script>
+  </body>
+</html>
