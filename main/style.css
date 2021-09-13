@@ -156,3 +156,13 @@
 .info_kép:hover {
   transform: scale(1.1);
 }
+
+/* Idegen nyelvű kompetencia kép */
+.idegen_nyelvű_kompet_kép {
+  width: 80%;
+  transition: 0.2s ease;
+}
+
+.idegen_nyelvű_kompet_kép:hover {
+  transform: scale(1.1);
+}
