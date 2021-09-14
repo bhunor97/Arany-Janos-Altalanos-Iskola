@@ -50,35 +50,3 @@
       });
     });
 })(bootstrap);
-
-// Vezetőség emailek
-const intezmenyVez = document.getElementById("intezmenyVez");
-const altalanosIgazg = document.getElementById("altalanosIgazg");
-const alsosIgazg = document.getElementById("alsosIgazg");
-const muvIgazg = document.getElementById("muvIgazg");
-const pszichol = document.getElementById("pszichologus");
-
-// Intézményvezető
-intezmenyVez.onclick = () => {
-  window.location = "mailto:igazgato@aranyjanos-zuglo.edu.hu";
-};
-
-// Általános igazgatóhelyettes
-altalanosIgazg.onclick = () => {
-  window.location = "mailto:igazgatohelyettes@aranyjanos-zuglo.edu.hu";
-};
-
-// Alsós igazgatóhelyettes
-alsosIgazg.onclick = () => {
-  window.location = "mailto:igazgatohelyettes.dosane@aranyjanos-zuglo.edu.hu";
-};
-
-// Művészeti igazgatóhelyettes
-muvIgazg.onclick = () => {
-  window.location = "mailto:muveszeti@aranyjanos-zuglo.edu.hu";
-};
-
-// Pszichológus
-pszichol.onclick = () => {
-  window.location = "mailto:persoczki.regina.pszi@gmail.com";
-};
