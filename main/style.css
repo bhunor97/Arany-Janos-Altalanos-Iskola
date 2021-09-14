@@ -166,3 +166,8 @@
 .idegen_nyelvű_kompet_kép:hover {
   transform: scale(1.1);
 }
+
+/* Arany Pengő képek */
+.arany_pengo_kep {
+  width: 250px;
+}
