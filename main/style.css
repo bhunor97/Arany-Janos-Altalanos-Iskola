@@ -171,3 +171,13 @@
 .arany_pengo_kep {
   width: 250px;
 }
+
+/* Online ebédbefizetés kép */
+.ebéd_kép {
+  width: 300px;
+  transition: 0.2s ease;
+}
+
+.ebéd_kép:hover {
+  transform: scale(1.1);
+}
