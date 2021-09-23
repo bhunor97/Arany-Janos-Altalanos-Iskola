@@ -17,6 +17,10 @@
   font-weight: 300;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* FŐOLDAL */
 /* Körhinta */
 .carousel-item {
@@ -34,7 +38,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../img/pic_1.jpg);
+  background-image: url(../arany_kepek/kep_1.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -47,7 +51,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../img/pic_2.jpg);
+  background-image: url(../arany_kepek/kep_6.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -60,8 +64,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../img/pic_3.jpg);
-  background-position: cover;
+  background-image: url(../arany_kepek/kep_4.jpg);
+  background-position: center;
   background-size: cover;
   opacity: 0.5;
 }
@@ -73,7 +77,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../img/tánc_2.jpg);
+  background-image: url(../arany_kepek/kep_7.jpg);
   background-position: cover;
   background-size: cover;
   opacity: 0.5;
@@ -97,14 +101,14 @@
   font-size: var(--ikon_méret_1);
 }
 
-.felső_ikon_div {
+.felső_ikon_a {
   cursor: pointer;
-  transition: 0.1s ease;
+  transition: 0.2s ease-in-out;
   border: 0.5px solid transparent;
   border-radius: 25px;
 }
 
-.felső_ikon_div:hover {
+.felső_ikon_a:hover {
   transform: scale(1.2);
   border: 0.5px solid #fff;
 }
