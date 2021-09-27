@@ -10,23 +10,23 @@ html {
 /* SZÍNEK: start */
 .ikon-sáv,
 .törzs_container {
-  /* background-color: #0d6efd; */
-  background-color: red;
+  background-color: #0d6efd;
+  /* background-color: red; */
 }
 
 .navbar {
-  /* background-color: #f8f9fa; */
-  background-color: red;
+  background-color: #f8f9fa;
+  /* background-color: red; */
 }
 
 .hullám {
-  /* fill: #0d6efd; */
-  fill: red;
+  fill: #0d6efd;
+  /* fill: red; */
 }
 
 .lábléc {
-  /* background-color: #212529; */
-  background-color: red;
+  background-color: #212529;
+  /* background-color: red; */
 }
 
 #ikon_1,
@@ -35,8 +35,8 @@ html {
 #ikon_4,
 #ikon_5,
 #ikon_6 {
-  /* color: "#"; */
-  color: blue;
+  color: "#";
+  /* color: blue; */
 }
 /* SZÍNEK: end */
 
