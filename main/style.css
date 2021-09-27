@@ -1,5 +1,5 @@
 :root {
-  /* MÉRETEK */
+  /* Felső ikonok méretei */
   --ikon_méret_1: 3rem;
 }
 
@@ -7,22 +7,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* SZÍNEK START: */
+/* SZÍNEK: start */
 .ikon-sáv,
 .törzs_container {
-  background-color: #0d6efd;
+  /* background-color: #0d6efd; */
+  background-color: red;
 }
 
-.nav-sáv {
-  background-color: #f8f9fa;
+.navbar {
+  /* background-color: #f8f9fa; */
+  background-color: red;
 }
 
 .hullám {
-  fill: #0d6efd;
+  /* fill: #0d6efd; */
+  fill: red;
 }
 
 .lábléc {
-  background-color: #212529;
+  /* background-color: #212529; */
+  background-color: red;
 }
 
 #ikon_1,
@@ -31,11 +35,12 @@ html {
 #ikon_4,
 #ikon_5,
 #ikon_6 {
-  color: "#";
+  /* color: "#"; */
+  color: blue;
 }
-/* SZÍNEK END: */
+/* SZÍNEK: end */
 
-/* Arany János Ált. Isk - navsáv főmenü gomb */
+/* Arany János Ált. Isk - bal felső főmenü gomb */
 .arany-fomenu {
   transition: 0.1s ease-in-out;
 }
@@ -52,7 +57,7 @@ html {
   position: relative;
 }
 
-/* Körhinta - képek */
+/* Körhinta - képek: start */
 .slider_1::before {
   content: "";
   position: absolute;
@@ -112,6 +117,7 @@ html {
   right: 0;
   padding-bottom: 50px;
 }
+/* Körhinta - képek: end */
 
 /* Felső ikonok */
 #ikon_1,
