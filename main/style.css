@@ -1,25 +1,39 @@
 :root {
-  /* SZÍNEK */
-  --szín_1: #282740;
-  --szín_2: #343bbf;
-  --szín_3: #4973f2;
-  --szín_4: #f2ea77;
-  --szín_5: #f2f2f2;
   /* MÉRETEK */
   --ikon_méret_1: 3rem;
-  /* BETŰTÍPUS */
-  --betűtípus_1: "Poppins", sans-serif;
-  --betűtípus_2: "PT Serif", serif;
 }
-
-/* * {
-  font-family: var(--betűtípus_1);
-  font-weight: 300;
-} */
 
 html {
   scroll-behavior: smooth;
 }
+
+/* SZÍNEK START: */
+.ikon-sáv,
+.törzs_container {
+  background-color: #0d6efd;
+}
+
+.nav-sáv {
+  background-color: #f8f9fa;
+}
+
+.hullám {
+  fill: #0d6efd;
+}
+
+.lábléc {
+  background-color: #212529;
+}
+
+#ikon_1,
+#ikon_2,
+#ikon_3,
+#ikon_4,
+#ikon_5,
+#ikon_6 {
+  color: "#";
+}
+/* SZÍNEK END: */
 
 /* Arany János Ált. Isk - navsáv főmenü gomb */
 .arany-fomenu {
