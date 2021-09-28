@@ -1,6 +1,6 @@
 :root {
   /* Felső ikonok méretei */
-  --ikon_méret_1: 3rem;
+  --ikon_méret_1: 3.5rem;
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 }
 
 .navbar {
-  background-color: #f8f9fa;
-  /* background-color: red; */
+  /* background-color: #f8f9fa; */
+  background-color: #0d6efd;
 }
 
 .hullám {
@@ -40,18 +40,18 @@ html {
 }
 /* SZÍNEK: end */
 
-/* Arany János Ált. Isk - bal felső főmenü gomb */
-.arany-fomenu {
+/* Főoldal: főmenü gomb */
+.főoldal-gomb {
   transition: 0.1s ease-in-out;
 }
 
-.arany-fomenu:active {
+.főoldal-gomb:active {
   transform: scale(0.9);
 }
 
 /* Körhinta */
 .carousel-item {
-  height: 32rem;
+  height: 35rem;
   background: black;
   color: white;
   position: relative;
@@ -65,7 +65,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../arany_kepek/kep_1.jpg);
+  background-image: url(../arany_kepek/kep_4.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -91,7 +91,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../arany_kepek/kep_4.jpg);
+  background-image: url(../arany_kepek/kep_1.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -161,7 +161,22 @@ html {
   background-position: center;
   background-size: cover;
   width: 100%;
+  overflow: hidden;
 }
+
+/* Dráma, táncelőadás, néptánc, modern tánc kártyák: start */
+.kártya-törzs {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.extra-kártya-gomb {
+  width: 8rem;
+  align-self: center;
+}
+
+/* Dráma, táncelőadás, néptánc, modern tánc kártyák: start */
 
 /* Lábléc */
 .card {
@@ -212,4 +227,8 @@ html {
 
 .ebéd_kép:hover {
   transform: scale(1.1);
+}
+
+.legördülő-gomb {
+  color: #fff;
 }
