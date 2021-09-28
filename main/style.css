@@ -51,7 +51,7 @@ html {
 
 /* Körhinta */
 .carousel-item {
-  height: 35rem;
+  height: 32rem;
   background: black;
   color: white;
   position: relative;
@@ -151,6 +151,16 @@ html {
   transform: scale(1.1);
 }
 
+.info-kártya-container {
+  background-color: #f8f9fa;
+}
+
+@media only screen and (max-width: 400px) {
+  .info-kártya-container {
+    background-color: #0d6efd;
+  }
+}
+
 /* Kártyák */
 .tábor-kártya {
   height: 40rem;
@@ -160,7 +170,6 @@ html {
 .card-img-top {
   background-position: center;
   background-size: cover;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -176,7 +185,7 @@ html {
   align-self: center;
 }
 
-/* Dráma, táncelőadás, néptánc, modern tánc kártyák: start */
+/* Dráma, táncelőadás, néptánc, modern tánc kártyák: end */
 
 /* Lábléc */
 .card {
@@ -227,8 +236,4 @@ html {
 
 .ebéd_kép:hover {
   transform: scale(1.1);
-}
-
-.legördülő-gomb {
-  color: #fff;
 }
